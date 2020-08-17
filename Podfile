@@ -6,8 +6,8 @@ use_frameworks!
 
 target 'YiBaseProductSwift' do
 
-  pod 'PromiseKit', '6.10.0'
-  pod 'Moya/RxSwift', '14.0.0-alpha.2'
-  pod 'RxCocoa', '5.0.0'
+  pod 'PromiseKit'
+  pod 'Moya/RxSwift', '~> 14.0'
+  pod 'RxCocoa'
 
 end
