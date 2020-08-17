@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		0F5F0D8024E50398002BE690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5F0D7E24E50398002BE690 /* LaunchScreen.storyboard */; };
 		0F5F0D8B24E50398002BE690 /* YiBaseProductSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D8A24E50398002BE690 /* YiBaseProductSwiftTests.swift */; };
 		0F5F0D9624E50398002BE690 /* YiBaseProductSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */; };
+		0F86C8F424EA62D000685587 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86C8F324EA62D000685587 /* APIProvider.swift */; };
 		8A11D8C210CAC18881E32618 /* Pods_YiBaseProductSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7A480076BDA1C4567BAD5B /* Pods_YiBaseProductSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		0F5F0D9124E50398002BE690 /* YiBaseProductSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiBaseProductSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiBaseProductSwiftUITests.swift; sourceTree = "<group>"; };
 		0F5F0D9724E50398002BE690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F86C8F324EA62D000685587 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		2BED10B161B90B30EA6623E3 /* Pods-YiBaseProductSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiBaseProductSwift.release.xcconfig"; path = "Target Support Files/Pods-YiBaseProductSwift/Pods-YiBaseProductSwift.release.xcconfig"; sourceTree = "<group>"; };
 		BB624079D01AB9FABDC48D7F /* Pods-YiBaseProductSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiBaseProductSwift.debug.xcconfig"; path = "Target Support Files/Pods-YiBaseProductSwift/Pods-YiBaseProductSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		CB7A480076BDA1C4567BAD5B /* Pods_YiBaseProductSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiBaseProductSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 		0F5F0D7224E50394002BE690 /* YiBaseProductSwift */ = {
 			isa = PBXGroup;
 			children = (
+				0F86C8F224EA5DC800685587 /* NetworkLayer */,
 				0F5F0D7324E50394002BE690 /* AppDelegate.swift */,
 				0F5F0D7524E50394002BE690 /* SceneDelegate.swift */,
 				0F5F0D7724E50394002BE690 /* ViewController.swift */,
@@ -135,13 +138,20 @@
 			path = YiBaseProductSwiftUITests;
 			sourceTree = "<group>";
 		};
+		0F86C8F224EA5DC800685587 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0F86C8F324EA62D000685587 /* APIProvider.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
 		28EF3044229569AF8F16707F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				BB624079D01AB9FABDC48D7F /* Pods-YiBaseProductSwift.debug.xcconfig */,
 				2BED10B161B90B30EA6623E3 /* Pods-YiBaseProductSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -329,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5F0D7824E50394002BE690 /* ViewController.swift in Sources */,
+				0F86C8F424EA62D000685587 /* APIProvider.swift in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				0F5F0D7624E50394002BE690 /* SceneDelegate.swift in Sources */,
 			);
