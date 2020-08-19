@@ -15,7 +15,14 @@
 		0F5F0D8024E50398002BE690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5F0D7E24E50398002BE690 /* LaunchScreen.storyboard */; };
 		0F5F0D8B24E50398002BE690 /* YiBaseProductSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D8A24E50398002BE690 /* YiBaseProductSwiftTests.swift */; };
 		0F5F0D9624E50398002BE690 /* YiBaseProductSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */; };
-		0F86C8F424EA62D000685587 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86C8F324EA62D000685587 /* APIProvider.swift */; };
+		0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86C8F324EA62D000685587 /* YAPIProvider.swift */; };
+		19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBCA24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift */; };
+		19F2CBCD24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBCC24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift */; };
+		19F2CBCF24ECEC6700CA2FCD /* YNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBCE24ECEC6700CA2FCD /* YNetworkError.swift */; };
+		19F2CBD124ECEE3000CA2FCD /* String+YNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD024ECEE3000CA2FCD /* String+YNetwork.swift */; };
+		19F2CBD324ECF98C00CA2FCD /* YAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD224ECF98C00CA2FCD /* YAPI.swift */; };
+		19F2CBD624ECFBA300CA2FCD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD524ECFBA300CA2FCD /* String+Extension.swift */; };
+		19F2CBD924ED129500CA2FCD /* YRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD824ED129500CA2FCD /* YRequestInterceptor.swift */; };
 		8A11D8C210CAC18881E32618 /* Pods_YiBaseProductSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7A480076BDA1C4567BAD5B /* Pods_YiBaseProductSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +58,14 @@
 		0F5F0D9124E50398002BE690 /* YiBaseProductSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiBaseProductSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiBaseProductSwiftUITests.swift; sourceTree = "<group>"; };
 		0F5F0D9724E50398002BE690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F86C8F324EA62D000685587 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		0F86C8F324EA62D000685587 /* YAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAPIProvider.swift; sourceTree = "<group>"; };
+		19F2CBCA24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNetWorkActivityStatusPlugin.swift; sourceTree = "<group>"; };
+		19F2CBCC24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNetworkActivityScheduler.swift; sourceTree = "<group>"; };
+		19F2CBCE24ECEC6700CA2FCD /* YNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNetworkError.swift; sourceTree = "<group>"; };
+		19F2CBD024ECEE3000CA2FCD /* String+YNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YNetwork.swift"; sourceTree = "<group>"; };
+		19F2CBD224ECF98C00CA2FCD /* YAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAPI.swift; sourceTree = "<group>"; };
+		19F2CBD524ECFBA300CA2FCD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		19F2CBD824ED129500CA2FCD /* YRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRequestInterceptor.swift; sourceTree = "<group>"; };
 		2BED10B161B90B30EA6623E3 /* Pods-YiBaseProductSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiBaseProductSwift.release.xcconfig"; path = "Target Support Files/Pods-YiBaseProductSwift/Pods-YiBaseProductSwift.release.xcconfig"; sourceTree = "<group>"; };
 		BB624079D01AB9FABDC48D7F /* Pods-YiBaseProductSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiBaseProductSwift.debug.xcconfig"; path = "Target Support Files/Pods-YiBaseProductSwift/Pods-YiBaseProductSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		CB7A480076BDA1C4567BAD5B /* Pods_YiBaseProductSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiBaseProductSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +122,7 @@
 		0F5F0D7224E50394002BE690 /* YiBaseProductSwift */ = {
 			isa = PBXGroup;
 			children = (
+				19F2CBD424ECFB9500CA2FCD /* Extesion */,
 				0F86C8F224EA5DC800685587 /* NetworkLayer */,
 				0F5F0D7324E50394002BE690 /* AppDelegate.swift */,
 				0F5F0D7524E50394002BE690 /* SceneDelegate.swift */,
@@ -141,9 +156,23 @@
 		0F86C8F224EA5DC800685587 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				0F86C8F324EA62D000685587 /* APIProvider.swift */,
+				19F2CBD024ECEE3000CA2FCD /* String+YNetwork.swift */,
+				19F2CBD224ECF98C00CA2FCD /* YAPI.swift */,
+				0F86C8F324EA62D000685587 /* YAPIProvider.swift */,
+				19F2CBCC24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift */,
+				19F2CBCA24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift */,
+				19F2CBCE24ECEC6700CA2FCD /* YNetworkError.swift */,
+				19F2CBD824ED129500CA2FCD /* YRequestInterceptor.swift */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		19F2CBD424ECFB9500CA2FCD /* Extesion */ = {
+			isa = PBXGroup;
+			children = (
+				19F2CBD524ECFBA300CA2FCD /* String+Extension.swift */,
+			);
+			path = Extesion;
 			sourceTree = "<group>";
 		};
 		28EF3044229569AF8F16707F /* Pods */ = {
@@ -339,9 +368,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F5F0D7824E50394002BE690 /* ViewController.swift in Sources */,
-				0F86C8F424EA62D000685587 /* APIProvider.swift in Sources */,
+				0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */,
+				19F2CBD924ED129500CA2FCD /* YRequestInterceptor.swift in Sources */,
+				19F2CBCF24ECEC6700CA2FCD /* YNetworkError.swift in Sources */,
+				19F2CBD324ECF98C00CA2FCD /* YAPI.swift in Sources */,
+				19F2CBD124ECEE3000CA2FCD /* String+YNetwork.swift in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				0F5F0D7624E50394002BE690 /* SceneDelegate.swift in Sources */,
+				19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */,
+				19F2CBD624ECFBA300CA2FCD /* String+Extension.swift in Sources */,
+				19F2CBCD24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
