@@ -16,6 +16,7 @@
 		0F5F0D8B24E50398002BE690 /* YiBaseProductSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D8A24E50398002BE690 /* YiBaseProductSwiftTests.swift */; };
 		0F5F0D9624E50398002BE690 /* YiBaseProductSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */; };
 		0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86C8F324EA62D000685587 /* YAPIProvider.swift */; };
+		1924F004250B69240007D663 /* QuantumValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F003250B69240007D663 /* QuantumValue.swift */; };
 		19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */; };
 		19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */; };
 		19C36AC824ED1D6300ED7845 /* Value+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC724ED1D6300ED7845 /* Value+Y.swift */; };
@@ -65,6 +66,7 @@
 		0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiBaseProductSwiftUITests.swift; sourceTree = "<group>"; };
 		0F5F0D9724E50398002BE690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F86C8F324EA62D000685587 /* YAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAPIProvider.swift; sourceTree = "<group>"; };
+		1924F003250B69240007D663 /* QuantumValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumValue.swift; sourceTree = "<group>"; };
 		19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Y.swift"; sourceTree = "<group>"; };
 		19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Y.swift"; sourceTree = "<group>"; };
 		19C36AC724ED1D6300ED7845 /* Value+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Value+Y.swift"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		0F5F0D7224E50394002BE690 /* YiBaseProductSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1924F001250B68ED0007D663 /* Component */,
 				19F2CBD424ECFB9500CA2FCD /* Extesion */,
 				0F86C8F224EA5DC800685587 /* NetworkLayer */,
 				0F5F0D7324E50394002BE690 /* AppDelegate.swift */,
@@ -177,6 +180,22 @@
 				19F2CBD824ED129500CA2FCD /* YRequestInterceptor.swift */,
 			);
 			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		1924F001250B68ED0007D663 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1924F002250B68FD0007D663 /* QuantumValue */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		1924F002250B68FD0007D663 /* QuantumValue */ = {
+			isa = PBXGroup;
+			children = (
+				1924F003250B69240007D663 /* QuantumValue.swift */,
+			);
+			path = QuantumValue;
 			sourceTree = "<group>";
 		};
 		19C36AC324ED1BA400ED7845 /* UINib */ = {
@@ -444,6 +463,7 @@
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */,
 				0F5F0D7624E50394002BE690 /* SceneDelegate.swift in Sources */,
+				1924F004250B69240007D663 /* QuantumValue.swift in Sources */,
 				19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */,
 				19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */,
 				19F2CBDB24ED17FE00CA2FCD /* Named+Y.swift in Sources */,
