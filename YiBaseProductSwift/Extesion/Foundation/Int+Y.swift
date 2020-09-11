@@ -1,17 +1,17 @@
 //
-//  Value+Y.swift
+//  Int+Y.swift
 //  YiBaseProductSwift
 //
-//  Created by 任斌 on 2020/8/19.
+//  Created by zero_rb on 2020/9/11.
 //  Copyright © 2020 任斌. All rights reserved.
 //
 
 import Foundation
 import CoreGraphics
 
-extension CGFloat {
+extension Int {
     
-    public func valueBetween(min: CGFloat, max: CGFloat) -> CGFloat
+    public func valueBetween(min: Int, max: Int) -> Int
     {
         switch self {
         case max...:
@@ -23,7 +23,7 @@ extension CGFloat {
         }
     }
     
-    public var valueBetween0And1: CGFloat {
+    public var valueBetween0And1: Int {
         return self.valueBetween(min: 0, max: 1)
     }
     
@@ -31,40 +31,40 @@ extension CGFloat {
         return "\(self)"
     }
     
-    public var intValue: Int {
-        return Int(self)
-    }
-    
     public var floatValue: Float {
         return Float(self)
+    }
+    
+    public var CGFloatValue: CGFloat {
+        return CGFloat(self)
     }
     
     public var doubleValue: Double {
         return Double(self)
     }
     
-    public var double: CGFloat {
-        return self * 2.0
+    public var double: Int {
+        return self * 2
     }
     
-    public var half: CGFloat {
-        return self * 0.5
+    public var half: Int {
+        return self/2
     }
     
-    public var triple: CGFloat {
-        return self * 3.0
+    public var triple: Int {
+        return self * 3
     }
     
-    public var one_third: CGFloat {
-        return self/3.0
+    public var one_third: Int {
+        return self/3
     }
     
-    public var quadruple: CGFloat {
-        return self * 4.0
+    public var quadruple: Int {
+        return self * 4
     }
     
-    public var quarter: CGFloat {
-        return self * 0.25
+    public var quarter: Int {
+        return self/4
     }
 }
 

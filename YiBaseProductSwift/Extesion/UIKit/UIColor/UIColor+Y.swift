@@ -8,8 +8,7 @@
 
 import UIKit
 
-extension UIColor
-{
+extension UIColor {
     public static func colorFrom(beginColor: UIColor,
                                  endColor: UIColor,
                                  percent: CGFloat) -> UIColor
