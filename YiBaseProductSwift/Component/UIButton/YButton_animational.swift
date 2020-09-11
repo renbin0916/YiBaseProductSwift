@@ -8,13 +8,19 @@
 
 import UIKit
 
-/// this button will have a animation when you change it's text color
+/*
+ * this button will have a animation when you change it's text color
+ */
 public class YButton_animational: UIView {
     
     //MARK: public
     public typealias ButtonClickBlock = (_ button: YButton_animational) ->Void
     public var clickButton: ButtonClickBlock?
     public var highlightColor: UIColor?
+    /// if we want a font animation with color change, this property should be set value to true
+    public var shouldChangeTextFont = false
+    /// if we make shouldChangeTextFont == true, this property value will decide how bigger the text could be
+    public var maxScale: CGFloat    = 1
     public var title: String = "" {
         didSet {
             _textLayer.string = title
