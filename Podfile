@@ -9,4 +9,5 @@ target 'YiBaseProductSwift' do
   pod 'Moya/RxSwift', '~> 14.0'
   pod 'RxCocoa'
   pod 'SDWebImage'
+  pod 'SnapKit', '5.0.1'
 end
