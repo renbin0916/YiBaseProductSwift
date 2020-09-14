@@ -30,6 +30,7 @@
 		19417FF8250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */; };
 		19417FFC250F500500F6D691 /* YBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FFB250F500500F6D691 /* YBaseNavigationController.swift */; };
 		19417FFE250F513800F6D691 /* YBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FFD250F513800F6D691 /* YBaseViewController.swift */; };
+		19418007250F677600F6D691 /* UIView+YCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 19418006250F677600F6D691 /* UIView+YCorner.m */; };
 		19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */; };
 		19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */; };
 		19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */; };
@@ -93,6 +94,9 @@
 		19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCollectionDecorationView_backgroudColor.swift; sourceTree = "<group>"; };
 		19417FFB250F500500F6D691 /* YBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseNavigationController.swift; sourceTree = "<group>"; };
 		19417FFD250F513800F6D691 /* YBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseViewController.swift; sourceTree = "<group>"; };
+		19418000250F652200F6D691 /* YiBaseProductSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiBaseProductSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		19418005250F677600F6D691 /* UIView+YCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YCorner.h"; sourceTree = "<group>"; };
+		19418006250F677600F6D691 /* UIView+YCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCorner.m"; sourceTree = "<group>"; };
 		19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Y.swift"; sourceTree = "<group>"; };
 		19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Y.swift"; sourceTree = "<group>"; };
 		19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Y.swift"; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 		0F5F0D7224E50394002BE690 /* YiBaseProductSwift */ = {
 			isa = PBXGroup;
 			children = (
+				19418004250F66F000F6D691 /* Resources */,
 				1924F001250B68ED0007D663 /* Component */,
 				19F2CBD424ECFB9500CA2FCD /* Extesion */,
 				0F86C8F224EA5DC800685587 /* NetworkLayer */,
@@ -290,11 +295,12 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
-		19417FFF250F561900F6D691 /* UIDevice */ = {
+		19418004250F66F000F6D691 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19418000250F652200F6D691 /* YiBaseProductSwift-Bridging-Header.h */,
 			);
-			path = UIDevice;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		19C36AC324ED1BA400ED7845 /* UINib */ = {
@@ -338,7 +344,6 @@
 		19F2CBDD24ED184800CA2FCD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				19417FFF250F561900F6D691 /* UIDevice */,
 				19C36AC424ED1D1700ED7845 /* UIColor */,
 				19C36AC324ED1BA400ED7845 /* UINib */,
 				19F2CBE324ED18AB00CA2FCD /* UIView */,
@@ -359,6 +364,8 @@
 			isa = PBXGroup;
 			children = (
 				19F2CBE024ED189500CA2FCD /* UIView+Y.swift */,
+				19418005250F677600F6D691 /* UIView+YCorner.h */,
+				19418006250F677600F6D691 /* UIView+YCorner.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -450,6 +457,7 @@
 				TargetAttributes = {
 					0F5F0D6F24E50394002BE690 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1170;
 					};
 					0F5F0D8524E50398002BE690 = {
 						CreatedOnToolsVersion = 11.5;
@@ -570,6 +578,7 @@
 				19417FF0250F43AF00F6D691 /* YSegmentView.swift in Sources */,
 				19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */,
 				1924F00C250B7C090007D663 /* Int+Y.swift in Sources */,
+				19418007250F677600F6D691 /* UIView+YCorner.m in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */,
 				19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */,
@@ -751,6 +760,7 @@
 			baseConfigurationReference = BB624079D01AB9FABDC48D7F /* Pods-YiBaseProductSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 232SMV5CPW;
 				INFOPLIST_FILE = YiBaseProductSwift/Info.plist;
@@ -760,6 +770,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yi.YiBaseProductSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YiBaseProductSwift/Resources/YiBaseProductSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -770,6 +782,7 @@
 			baseConfigurationReference = 2BED10B161B90B30EA6623E3 /* Pods-YiBaseProductSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 232SMV5CPW;
 				INFOPLIST_FILE = YiBaseProductSwift/Info.plist;
@@ -779,6 +792,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yi.YiBaseProductSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YiBaseProductSwift/Resources/YiBaseProductSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
