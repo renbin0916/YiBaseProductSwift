@@ -10,4 +10,4 @@
 
 import UIKit
 
-extension UIView: Named {}
+extension UIView: YNamed {}

@@ -21,8 +21,15 @@
 		1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F009250B7AF70007D663 /* Float+Y.swift */; };
 		1924F00C250B7C090007D663 /* Int+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00B250B7C090007D663 /* Int+Y.swift */; };
 		1924F00E250B7CC50007D663 /* Double+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00D250B7CC50007D663 /* Double+Y.swift */; };
-		1924F010250B7EB90007D663 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00F250B7EB90007D663 /* TimeInterval.swift */; };
+		1924F010250B7EB90007D663 /* TimeInterval+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00F250B7EB90007D663 /* TimeInterval+Y.swift */; };
 		19417FE6250F3EFF00F6D691 /* CATextLayer_center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */; };
+		19417FE9250F42B200F6D691 /* YLoadDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FE8250F42B200F6D691 /* YLoadDataProtocol.swift */; };
+		19417FEC250F438600F6D691 /* YSegmentViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FEB250F438600F6D691 /* YSegmentViewFlowLayout.swift */; };
+		19417FEE250F439B00F6D691 /* YSegmentViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FED250F439B00F6D691 /* YSegmentViewStyle.swift */; };
+		19417FF0250F43AF00F6D691 /* YSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FEF250F43AF00F6D691 /* YSegmentView.swift */; };
+		19417FF2250F43BA00F6D691 /* YSegmentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF1250F43BA00F6D691 /* YSegmentViewDelegate.swift */; };
+		19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF4250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift */; };
+		19417FF8250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */; };
 		19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */; };
 		19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */; };
 		19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */; };
@@ -33,7 +40,7 @@
 		19F2CBD324ECF98C00CA2FCD /* YAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD224ECF98C00CA2FCD /* YAPI.swift */; };
 		19F2CBD624ECFBA300CA2FCD /* String+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD524ECFBA300CA2FCD /* String+Y.swift */; };
 		19F2CBD924ED129500CA2FCD /* YRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBD824ED129500CA2FCD /* YRequestInterceptor.swift */; };
-		19F2CBDB24ED17FE00CA2FCD /* Named+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBDA24ED17FE00CA2FCD /* Named+Y.swift */; };
+		19F2CBDB24ED17FE00CA2FCD /* YNamed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBDA24ED17FE00CA2FCD /* YNamed.swift */; };
 		19F2CBDF24ED186100CA2FCD /* UIViewController+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBDE24ED186100CA2FCD /* UIViewController+Y.swift */; };
 		19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2CBE024ED189500CA2FCD /* UIView+Y.swift */; };
 		8A11D8C210CAC18881E32618 /* Pods_YiBaseProductSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7A480076BDA1C4567BAD5B /* Pods_YiBaseProductSwift.framework */; };
@@ -77,8 +84,15 @@
 		1924F009250B7AF70007D663 /* Float+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Y.swift"; sourceTree = "<group>"; };
 		1924F00B250B7C090007D663 /* Int+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Y.swift"; sourceTree = "<group>"; };
 		1924F00D250B7CC50007D663 /* Double+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Y.swift"; sourceTree = "<group>"; };
-		1924F00F250B7EB90007D663 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		1924F00F250B7EB90007D663 /* TimeInterval+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Y.swift"; sourceTree = "<group>"; };
 		19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATextLayer_center.swift; sourceTree = "<group>"; };
+		19417FE8250F42B200F6D691 /* YLoadDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLoadDataProtocol.swift; sourceTree = "<group>"; };
+		19417FEB250F438600F6D691 /* YSegmentViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentViewFlowLayout.swift; sourceTree = "<group>"; };
+		19417FED250F439B00F6D691 /* YSegmentViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentViewStyle.swift; sourceTree = "<group>"; };
+		19417FEF250F43AF00F6D691 /* YSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentView.swift; sourceTree = "<group>"; };
+		19417FF1250F43BA00F6D691 /* YSegmentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentViewDelegate.swift; sourceTree = "<group>"; };
+		19417FF4250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCollectionViewLaoutAttributes_backgroundColor.swift; sourceTree = "<group>"; };
+		19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCollectionDecorationView_backgroudColor.swift; sourceTree = "<group>"; };
 		19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Y.swift"; sourceTree = "<group>"; };
 		19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Y.swift"; sourceTree = "<group>"; };
 		19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Y.swift"; sourceTree = "<group>"; };
@@ -89,7 +103,7 @@
 		19F2CBD224ECF98C00CA2FCD /* YAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAPI.swift; sourceTree = "<group>"; };
 		19F2CBD524ECFBA300CA2FCD /* String+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Y.swift"; sourceTree = "<group>"; };
 		19F2CBD824ED129500CA2FCD /* YRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YRequestInterceptor.swift; sourceTree = "<group>"; };
-		19F2CBDA24ED17FE00CA2FCD /* Named+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Named+Y.swift"; sourceTree = "<group>"; };
+		19F2CBDA24ED17FE00CA2FCD /* YNamed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNamed.swift; sourceTree = "<group>"; };
 		19F2CBDE24ED186100CA2FCD /* UIViewController+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Y.swift"; sourceTree = "<group>"; };
 		19F2CBE024ED189500CA2FCD /* UIView+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Y.swift"; sourceTree = "<group>"; };
 		2BED10B161B90B30EA6623E3 /* Pods-YiBaseProductSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiBaseProductSwift.release.xcconfig"; path = "Target Support Files/Pods-YiBaseProductSwift/Pods-YiBaseProductSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +211,10 @@
 		1924F001250B68ED0007D663 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				19417FF9250F49E700F6D691 /* Protocol */,
+				19417FF6250F475200F6D691 /* UICollectionViewReusableView */,
+				19417FF3250F469300F6D691 /* UICollectionViewLaoutAttributes */,
+				19417FEA250F435C00F6D691 /* SegmentView */,
 				19417FE4250F3EBC00F6D691 /* CATextLayer */,
 				1924F005250B6CE60007D663 /* UIButton */,
 				1924F002250B68FD0007D663 /* QuantumValue */,
@@ -228,6 +246,42 @@
 			path = CATextLayer;
 			sourceTree = "<group>";
 		};
+		19417FEA250F435C00F6D691 /* SegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				19417FEB250F438600F6D691 /* YSegmentViewFlowLayout.swift */,
+				19417FED250F439B00F6D691 /* YSegmentViewStyle.swift */,
+				19417FEF250F43AF00F6D691 /* YSegmentView.swift */,
+				19417FF1250F43BA00F6D691 /* YSegmentViewDelegate.swift */,
+			);
+			path = SegmentView;
+			sourceTree = "<group>";
+		};
+		19417FF3250F469300F6D691 /* UICollectionViewLaoutAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				19417FF4250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift */,
+			);
+			path = UICollectionViewLaoutAttributes;
+			sourceTree = "<group>";
+		};
+		19417FF6250F475200F6D691 /* UICollectionViewReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */,
+			);
+			path = UICollectionViewReusableView;
+			sourceTree = "<group>";
+		};
+		19417FF9250F49E700F6D691 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				19417FE8250F42B200F6D691 /* YLoadDataProtocol.swift */,
+				19F2CBDA24ED17FE00CA2FCD /* YNamed.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		19C36AC324ED1BA400ED7845 /* UINib */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,13 +310,12 @@
 		19F2CBDC24ED183B00CA2FCD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				19F2CBDA24ED17FE00CA2FCD /* Named+Y.swift */,
 				19F2CBD524ECFBA300CA2FCD /* String+Y.swift */,
 				19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */,
 				1924F009250B7AF70007D663 /* Float+Y.swift */,
 				1924F00B250B7C090007D663 /* Int+Y.swift */,
 				1924F00D250B7CC50007D663 /* Double+Y.swift */,
-				1924F00F250B7EB90007D663 /* TimeInterval.swift */,
+				1924F00F250B7EB90007D663 /* TimeInterval+Y.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -486,27 +539,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19417FEC250F438600F6D691 /* YSegmentViewFlowLayout.swift in Sources */,
 				0F5F0D7824E50394002BE690 /* ViewController.swift in Sources */,
 				19F2CBDF24ED186100CA2FCD /* UIViewController+Y.swift in Sources */,
+				19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */,
 				0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */,
 				1924F007250B6D6B0007D663 /* YButton_animational.swift in Sources */,
-				1924F010250B7EB90007D663 /* TimeInterval.swift in Sources */,
+				1924F010250B7EB90007D663 /* TimeInterval+Y.swift in Sources */,
 				19F2CBD924ED129500CA2FCD /* YRequestInterceptor.swift in Sources */,
 				19F2CBCF24ECEC6700CA2FCD /* YNetworkError.swift in Sources */,
 				19F2CBD324ECF98C00CA2FCD /* YAPI.swift in Sources */,
 				19F2CBD124ECEE3000CA2FCD /* String+YNetwork.swift in Sources */,
 				19417FE6250F3EFF00F6D691 /* CATextLayer_center.swift in Sources */,
+				19417FF0250F43AF00F6D691 /* YSegmentView.swift in Sources */,
 				19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */,
 				1924F00C250B7C090007D663 /* Int+Y.swift in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */,
 				19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */,
+				19417FF2250F43BA00F6D691 /* YSegmentViewDelegate.swift in Sources */,
 				0F5F0D7624E50394002BE690 /* SceneDelegate.swift in Sources */,
+				19417FF8250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift in Sources */,
+				19417FE9250F42B200F6D691 /* YLoadDataProtocol.swift in Sources */,
 				1924F00E250B7CC50007D663 /* Double+Y.swift in Sources */,
 				1924F004250B69240007D663 /* YQuantumValue.swift in Sources */,
 				19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */,
+				19417FEE250F439B00F6D691 /* YSegmentViewStyle.swift in Sources */,
 				19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */,
-				19F2CBDB24ED17FE00CA2FCD /* Named+Y.swift in Sources */,
+				19F2CBDB24ED17FE00CA2FCD /* YNamed.swift in Sources */,
 				19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */,
 				19F2CBD624ECFBA300CA2FCD /* String+Y.swift in Sources */,
 				19F2CBCD24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift in Sources */,

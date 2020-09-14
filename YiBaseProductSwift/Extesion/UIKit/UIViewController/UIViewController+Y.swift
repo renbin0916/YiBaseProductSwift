@@ -8,4 +8,4 @@
 
 import UIKit
 
-extension UIViewController: Named {}
+extension UIViewController: YNamed {}

@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol Named {}
+protocol YNamed {}
 
-extension Named {
+extension YNamed {
     static var className: String {
         return "\(self)"
     }
