@@ -13,10 +13,23 @@ import UIKit
  */
 public class YButton_animational: UIView {
     
+    class func create(_ title: String,
+                      normalColor: UIColor,
+                      selectedColor: UIColor,
+                      font: UIFont = UIFont.systemFont(ofSize: 18),
+                      isSelecated: Bool = false) -> YButton_animational {
+        let btn = YButton_animational()
+        btn.title = title
+        btn.normalColor = normalColor
+        btn.selectedColor = selectedColor
+        btn.font          = font
+        btn.isSelected    = isSelecated
+        return btn
+    }
+    
     //MARK: public
     public typealias ButtonClickBlock = (_ button: YButton_animational) ->Void
     public var clickButton: ButtonClickBlock?
-    public var highlightColor: UIColor?
     /// if we want a font animation with color change, this property should be set value to true
     public var shouldChangeTextFont = false
     /// if we make shouldChangeTextFont == true, this property value will decide how bigger the text could be
@@ -47,6 +60,7 @@ public class YButton_animational: UIView {
         didSet {
             _textLayer.font     = font
             _textLayer.fontSize = font.pointSize
+            _originFont         = font
         }
     }
     
@@ -55,57 +69,38 @@ public class YButton_animational: UIView {
             _textLayer.foregroundColor = UIColor.colorFrom(beginColor: normalColor,
                                                            endColor: selectedColor,
                                                            percent: percent).cgColor
+            if shouldChangeTextFont {
+                guard let originFont = _originFont else { return }
+                let uesedSize = originFont.pointSize * ((maxScale - 1) * percent + 1)
+                let usedfont  = originFont.withSize(uesedSize)
+                _updateTextFont(usedFont: usedfont)
+            }
         }
     }
     
     public var isSelected: Bool = false {
         didSet {
             let temp = isSelected ? selectedColor : normalColor
-            UIView.animate(withDuration: .animateTime_show) {
-                self._textLayer.foregroundColor = temp.cgColor
+            if shouldChangeTextFont, let originFont = _originFont {
+                let fontSize = isSelected ? originFont.pointSize * maxScale : originFont.pointSize
+                UIView.animate(withDuration: .animateTime_show) {
+                    self._textLayer.foregroundColor = temp.cgColor
+                    self._textLayer.fontSize        = fontSize
+                }
+            } else {
+                UIView.animate(withDuration: .animateTime_show) {
+                    self._textLayer.foregroundColor = temp.cgColor
+                }
             }
         }
     }
-    
-    convenience init(_ titleI: String,
-                     normalColorI: UIColor,
-                     selectedColorI: UIColor,
-                     fontI: UIFont = UIFont.systemFont(ofSize: 18),
-                     percentI: CGFloat = 0,
-                     isSelectedI: Bool = false) {
-        self.init()
-        title = titleI
-        normalColor   = normalColorI
-        selectedColor = selectedColorI
-        font          = fontI
-        percent       = percentI
-        isSelected    = isSelectedI
-    }
-    
+
     public override func layoutSubviews() {
         super.layoutSubviews()
         _textLayer.frame = self.bounds
     }
     
-    
     //MARK: actions
-    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        if let usedC = highlightColor {
-            UIView.animate(withDuration: .animateTime_show) {
-                self._textLayer.foregroundColor = usedC.cgColor;
-            }
-        }
-    }
-    
-    public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesCancelled(touches, with: event)
-        let usedC = isSelected ? selectedColor.cgColor : normalColor.cgColor
-        UIView.animate(withDuration: .animateTime_hide) {
-            self._textLayer.foregroundColor = usedC
-        }
-    }
-    
     public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
         if let tap = touches.first?.tapCount, tap == 1 {
@@ -113,15 +108,24 @@ public class YButton_animational: UIView {
         }
     }
     
+    //MARK: private func
+    private func _updateTextFont(usedFont: UIFont) {
+        _textLayer.font     = usedFont
+        _textLayer.fontSize = usedFont.pointSize
+    }
     
     //MARK: lazy load
-    lazy var _textLayer: CATextLayer = {
-        let temp = CATextLayer()
+    lazy var _textLayer: CATextLayer_center = {
+        let temp = CATextLayer_center()
         temp.alignmentMode = .center
         temp.contentsScale = UIScreen.main.scale
         temp.font          = font
         temp.fontSize      = font.pointSize
         layer.addSublayer(temp)
+        temp.frame         = layer.bounds
         return temp
     }()
+    
+    //MARK: private property
+    private var _originFont: UIFont?
 }

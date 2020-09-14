@@ -16,12 +16,13 @@
 		0F5F0D8B24E50398002BE690 /* YiBaseProductSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D8A24E50398002BE690 /* YiBaseProductSwiftTests.swift */; };
 		0F5F0D9624E50398002BE690 /* YiBaseProductSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */; };
 		0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86C8F324EA62D000685587 /* YAPIProvider.swift */; };
-		1924F004250B69240007D663 /* QuantumValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F003250B69240007D663 /* QuantumValue.swift */; };
+		1924F004250B69240007D663 /* YQuantumValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F003250B69240007D663 /* YQuantumValue.swift */; };
 		1924F007250B6D6B0007D663 /* YButton_animational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F006250B6D6B0007D663 /* YButton_animational.swift */; };
 		1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F009250B7AF70007D663 /* Float+Y.swift */; };
 		1924F00C250B7C090007D663 /* Int+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00B250B7C090007D663 /* Int+Y.swift */; };
 		1924F00E250B7CC50007D663 /* Double+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00D250B7CC50007D663 /* Double+Y.swift */; };
 		1924F010250B7EB90007D663 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00F250B7EB90007D663 /* TimeInterval.swift */; };
+		19417FE6250F3EFF00F6D691 /* CATextLayer_center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */; };
 		19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */; };
 		19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */; };
 		19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */; };
@@ -71,12 +72,13 @@
 		0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiBaseProductSwiftUITests.swift; sourceTree = "<group>"; };
 		0F5F0D9724E50398002BE690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F86C8F324EA62D000685587 /* YAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAPIProvider.swift; sourceTree = "<group>"; };
-		1924F003250B69240007D663 /* QuantumValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantumValue.swift; sourceTree = "<group>"; };
+		1924F003250B69240007D663 /* YQuantumValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQuantumValue.swift; sourceTree = "<group>"; };
 		1924F006250B6D6B0007D663 /* YButton_animational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YButton_animational.swift; sourceTree = "<group>"; };
 		1924F009250B7AF70007D663 /* Float+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Y.swift"; sourceTree = "<group>"; };
 		1924F00B250B7C090007D663 /* Int+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Y.swift"; sourceTree = "<group>"; };
 		1924F00D250B7CC50007D663 /* Double+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Y.swift"; sourceTree = "<group>"; };
 		1924F00F250B7EB90007D663 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATextLayer_center.swift; sourceTree = "<group>"; };
 		19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Y.swift"; sourceTree = "<group>"; };
 		19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Y.swift"; sourceTree = "<group>"; };
 		19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Y.swift"; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		1924F001250B68ED0007D663 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				19417FE4250F3EBC00F6D691 /* CATextLayer */,
 				1924F005250B6CE60007D663 /* UIButton */,
 				1924F002250B68FD0007D663 /* QuantumValue */,
 			);
@@ -204,7 +207,7 @@
 		1924F002250B68FD0007D663 /* QuantumValue */ = {
 			isa = PBXGroup;
 			children = (
-				1924F003250B69240007D663 /* QuantumValue.swift */,
+				1924F003250B69240007D663 /* YQuantumValue.swift */,
 			);
 			path = QuantumValue;
 			sourceTree = "<group>";
@@ -215,6 +218,14 @@
 				1924F006250B6D6B0007D663 /* YButton_animational.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		19417FE4250F3EBC00F6D691 /* CATextLayer */ = {
+			isa = PBXGroup;
+			children = (
+				19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */,
+			);
+			path = CATextLayer;
 			sourceTree = "<group>";
 		};
 		19C36AC324ED1BA400ED7845 /* UINib */ = {
@@ -484,6 +495,7 @@
 				19F2CBCF24ECEC6700CA2FCD /* YNetworkError.swift in Sources */,
 				19F2CBD324ECF98C00CA2FCD /* YAPI.swift in Sources */,
 				19F2CBD124ECEE3000CA2FCD /* String+YNetwork.swift in Sources */,
+				19417FE6250F3EFF00F6D691 /* CATextLayer_center.swift in Sources */,
 				19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */,
 				1924F00C250B7C090007D663 /* Int+Y.swift in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
@@ -491,7 +503,7 @@
 				19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */,
 				0F5F0D7624E50394002BE690 /* SceneDelegate.swift in Sources */,
 				1924F00E250B7CC50007D663 /* Double+Y.swift in Sources */,
-				1924F004250B69240007D663 /* QuantumValue.swift in Sources */,
+				1924F004250B69240007D663 /* YQuantumValue.swift in Sources */,
 				19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */,
 				19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */,
 				19F2CBDB24ED17FE00CA2FCD /* Named+Y.swift in Sources */,
@@ -602,7 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -656,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

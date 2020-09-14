@@ -11,6 +11,14 @@ import CoreGraphics
 
 extension Float {
     
+    //MARK: class method
+    static func valueBetween(min: Float, max: Float, percent: Float) -> Float {
+        let usedPercent = percent.valueBetween0And1
+        let diffrence   = max - min
+        return min + diffrence * usedPercent
+    }
+    
+    //MARK: instance method
     public func valueBetween(min: Float, max: Float) -> Float
     {
         switch self {

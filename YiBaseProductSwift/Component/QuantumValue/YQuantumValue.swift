@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum QuantumValue: Codable {
+public enum YQuantumValue: Codable {
     
     case int(Int)
     case double(Double)
@@ -59,7 +59,7 @@ public enum QuantumValue: Codable {
     }
 }
 
-extension QuantumValue {
+extension YQuantumValue {
     public var value: Any? {
         switch self {
         case .int(let value):

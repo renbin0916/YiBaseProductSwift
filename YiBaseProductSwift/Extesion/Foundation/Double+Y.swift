@@ -12,6 +12,14 @@ import CoreGraphics
 
 extension Double {
     
+    //MARK: class method
+    static func valueBetween(min: Double, max: Double, percent: Double) -> Double {
+        let usedPercent = percent.valueBetween0And1
+        let diffrence   = max - min
+        return min + diffrence * usedPercent
+    }
+    
+    //MARK: instance method
     public func valueBetween(min: Double, max: Double) -> Double
     {
         switch self {
