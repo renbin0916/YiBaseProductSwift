@@ -30,6 +30,8 @@
 		19417FF2250F43BA00F6D691 /* YSegmentViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF1250F43BA00F6D691 /* YSegmentViewDelegate.swift */; };
 		19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF4250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift */; };
 		19417FF8250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */; };
+		19417FFC250F500500F6D691 /* YBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FFB250F500500F6D691 /* YBaseNavigationController.swift */; };
+		19417FFE250F513800F6D691 /* YBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FFD250F513800F6D691 /* YBaseViewController.swift */; };
 		19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */; };
 		19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */; };
 		19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */; };
@@ -93,6 +95,8 @@
 		19417FF1250F43BA00F6D691 /* YSegmentViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentViewDelegate.swift; sourceTree = "<group>"; };
 		19417FF4250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCollectionViewLaoutAttributes_backgroundColor.swift; sourceTree = "<group>"; };
 		19417FF7250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCollectionDecorationView_backgroudColor.swift; sourceTree = "<group>"; };
+		19417FFB250F500500F6D691 /* YBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseNavigationController.swift; sourceTree = "<group>"; };
+		19417FFD250F513800F6D691 /* YBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBaseViewController.swift; sourceTree = "<group>"; };
 		19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Y.swift"; sourceTree = "<group>"; };
 		19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Y.swift"; sourceTree = "<group>"; };
 		19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Y.swift"; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 		1924F001250B68ED0007D663 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				19417FFA250F4FC700F6D691 /* UIViewController */,
 				19417FF9250F49E700F6D691 /* Protocol */,
 				19417FF6250F475200F6D691 /* UICollectionViewReusableView */,
 				19417FF3250F469300F6D691 /* UICollectionViewLaoutAttributes */,
@@ -282,6 +287,22 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		19417FFA250F4FC700F6D691 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				19417FFB250F500500F6D691 /* YBaseNavigationController.swift */,
+				19417FFD250F513800F6D691 /* YBaseViewController.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		19417FFF250F561900F6D691 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
 		19C36AC324ED1BA400ED7845 /* UINib */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +344,7 @@
 		19F2CBDD24ED184800CA2FCD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				19417FFF250F561900F6D691 /* UIDevice */,
 				19C36AC424ED1D1700ED7845 /* UIColor */,
 				19C36AC324ED1BA400ED7845 /* UINib */,
 				19F2CBE324ED18AB00CA2FCD /* UIView */,
@@ -541,6 +563,7 @@
 			files = (
 				19417FEC250F438600F6D691 /* YSegmentViewFlowLayout.swift in Sources */,
 				0F5F0D7824E50394002BE690 /* ViewController.swift in Sources */,
+				19417FFC250F500500F6D691 /* YBaseNavigationController.swift in Sources */,
 				19F2CBDF24ED186100CA2FCD /* UIViewController+Y.swift in Sources */,
 				19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */,
 				0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */,
@@ -566,6 +589,7 @@
 				19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */,
 				19417FEE250F439B00F6D691 /* YSegmentViewStyle.swift in Sources */,
 				19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */,
+				19417FFE250F513800F6D691 /* YBaseViewController.swift in Sources */,
 				19F2CBDB24ED17FE00CA2FCD /* YNamed.swift in Sources */,
 				19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */,
 				19F2CBD624ECFBA300CA2FCD /* String+Y.swift in Sources */,
