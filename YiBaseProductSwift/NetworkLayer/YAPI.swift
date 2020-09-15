@@ -46,7 +46,7 @@ extension YAPI: TargetType {
     }
     
     var sampleData: Data {
-        return String.empty.data(using: .utf8)!
+        return String.y_empty.data(using: .utf8)!
     }
     
     var task: Task {
@@ -57,7 +57,7 @@ extension YAPI: TargetType {
             return .requestParameters(parameters: ["account": account, "pwd": passWord], encoding: URLEncoding.default)
         }
     }
-
+    
     var headers: [String : String]? {
         switch self {
         case .requestSimpleData:

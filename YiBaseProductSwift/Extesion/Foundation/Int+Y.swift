@@ -11,7 +11,7 @@ import CoreGraphics
 
 extension Int {
     
-    public func valueBetween(min: Int, max: Int) -> Int
+    public func y_valueBetween(min: Int, max: Int) -> Int
     {
         switch self {
         case max...:
@@ -23,47 +23,47 @@ extension Int {
         }
     }
     
-    public var valueBetween0And1: Int {
-        return self.valueBetween(min: 0, max: 1)
+    public var y_valueBetween0And1: Int {
+        return self.y_valueBetween(min: 0, max: 1)
     }
     
-    public var stringValue: String {
+    public var y_stringValue: String {
         return "\(self)"
     }
     
-    public var floatValue: Float {
+    public var y_floatValue: Float {
         return Float(self)
     }
     
-    public var CGFloatValue: CGFloat {
+    public var y_CGFloatValue: CGFloat {
         return CGFloat(self)
     }
     
-    public var doubleValue: Double {
+    public var y_doubleValue: Double {
         return Double(self)
     }
     
-    public var double: Int {
+    public var y_double: Int {
         return self * 2
     }
     
-    public var half: Int {
+    public var y_half: Int {
         return self/2
     }
     
-    public var triple: Int {
+    public var y_triple: Int {
         return self * 3
     }
     
-    public var one_third: Int {
+    public var y_one_third: Int {
         return self/3
     }
     
-    public var quadruple: Int {
+    public var y_quadruple: Int {
         return self * 4
     }
     
-    public var quarter: Int {
+    public var y_quarter: Int {
         return self/4
     }
 }

@@ -11,11 +11,11 @@ import UIKit
 protocol NibLoadable {}
 
 extension NibLoadable {
-    static func loadFromNib() -> Self {
+    static func y_loadFromNib() -> Self {
         return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.first as! Self
     }
     
-    static func nib() -> UINib {
+    static func y_nib() -> UINib {
         return UINib(nibName: "\(self)", bundle: nil)
     }
 }

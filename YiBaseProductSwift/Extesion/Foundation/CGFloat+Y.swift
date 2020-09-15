@@ -12,14 +12,14 @@ import CoreGraphics
 extension CGFloat {
     
     //MARK: class method
-    static func valueBetween(min: CGFloat, max: CGFloat, percent: CGFloat) -> CGFloat {
-        let usedPercent = percent.valueBetween0And1
+    static func y_valueBetween(min: CGFloat, max: CGFloat, percent: CGFloat) -> CGFloat {
+        let usedPercent = percent.y_valueBetween0And1
         let diffrence   = max - min
         return min + diffrence * usedPercent
     }
     
     //MARK: instance method
-    public func valueBetween(min: CGFloat, max: CGFloat) -> CGFloat
+    public func y_valueBetween(min: CGFloat, max: CGFloat) -> CGFloat
     {
         switch self {
         case max...:
@@ -31,47 +31,47 @@ extension CGFloat {
         }
     }
     
-    public var valueBetween0And1: CGFloat {
-        return self.valueBetween(min: 0, max: 1)
+    public var y_valueBetween0And1: CGFloat {
+        return self.y_valueBetween(min: 0, max: 1)
     }
     
-    public var stringValue: String {
+    public var y_stringValue: String {
         return "\(self)"
     }
     
-    public var intValue: Int {
+    public var y_intValue: Int {
         return Int(self)
     }
     
-    public var floatValue: Float {
+    public var y_floatValue: Float {
         return Float(self)
     }
     
-    public var doubleValue: Double {
+    public var y_doubleValue: Double {
         return Double(self)
     }
     
-    public var double: CGFloat {
+    public var y_double: CGFloat {
         return self * 2.0
     }
     
-    public var half: CGFloat {
+    public var y_half: CGFloat {
         return self * 0.5
     }
     
-    public var triple: CGFloat {
+    public var y_triple: CGFloat {
         return self * 3.0
     }
     
-    public var one_third: CGFloat {
+    public var y_one_third: CGFloat {
         return self/3.0
     }
     
-    public var quadruple: CGFloat {
+    public var y_quadruple: CGFloat {
         return self * 4.0
     }
     
-    public var quarter: CGFloat {
+    public var y_quarter: CGFloat {
         return self * 0.25
     }
 }

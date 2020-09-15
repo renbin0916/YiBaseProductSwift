@@ -13,14 +13,14 @@ import CoreGraphics
 extension Double {
     
     //MARK: class method
-    static func valueBetween(min: Double, max: Double, percent: Double) -> Double {
-        let usedPercent = percent.valueBetween0And1
+    static func y_valueBetween(min: Double, max: Double, percent: Double) -> Double {
+        let usedPercent = percent.y_valueBetween0And1
         let diffrence   = max - min
         return min + diffrence * usedPercent
     }
     
     //MARK: instance method
-    public func valueBetween(min: Double, max: Double) -> Double
+    public func y_valueBetween(min: Double, max: Double) -> Double
     {
         switch self {
         case max...:
@@ -32,47 +32,47 @@ extension Double {
         }
     }
     
-    public var valueBetween0And1: Double {
-        return self.valueBetween(min: 0, max: 1)
+    public var y_valueBetween0And1: Double {
+        return self.y_valueBetween(min: 0, max: 1)
     }
     
-    public var stringValue: String {
+    public var y_stringValue: String {
         return "\(self)"
     }
     
-    public var intValue: Int {
+    public var y_intValue: Int {
         return Int(self)
     }
     
-    public var CGFloatValue: CGFloat {
+    public var y_CGFloatValue: CGFloat {
         return CGFloat(self)
     }
     
-    public var floatValue: Float {
+    public var y_floatValue: Float {
         return Float(self)
     }
     
-    public var double: Double {
+    public var y_double: Double {
         return self * 2.0
     }
     
-    public var half: Double {
+    public var y_half: Double {
         return self * 0.5
     }
     
-    public var triple: Double {
+    public var y_triple: Double {
         return self * 3.0
     }
     
-    public var one_third: Double {
+    public var y_one_third: Double {
         return self/3.0
     }
     
-    public var quadruple: Double {
+    public var y_quadruple: Double {
         return self * 4.0
     }
     
-    public var quarter: Double {
+    public var y_quarter: Double {
         return self * 0.25
     }
 }

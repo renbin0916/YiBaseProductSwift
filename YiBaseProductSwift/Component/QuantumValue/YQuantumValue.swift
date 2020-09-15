@@ -26,7 +26,7 @@ public enum YQuantumValue: Codable {
     
     public init(from decoder: Decoder) throws {
         if let stringValue = try? decoder.singleValueContainer().decode(String.self) {
-            if let boolValue = stringValue.boolValue {
+            if let boolValue = stringValue.y_boolValue {
                 self = .bool(boolValue)
             } else {
                 self = .string(stringValue)

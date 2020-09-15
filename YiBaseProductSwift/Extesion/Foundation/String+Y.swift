@@ -11,36 +11,36 @@ import CoreGraphics
 
 // MARK: - const
 extension String {
-    public static let empty = ""
+    public static let y_empty = ""
 }
 
 // MARK: - conversion
 extension String {
-
-    public var intValue: Int? {
+    
+    public var y_intValue: Int? {
         return Int(self)
     }
     
-    public var floatValue: Float? {
+    public var y_floatValue: Float? {
         return Float(self)
     }
     
-    public var CGFloatValue: CGFloat? {
-        if let temp = doubleValue {
+    public var y_CGFloatValue: CGFloat? {
+        if let temp = y_doubleValue {
             return CGFloat(temp)
         }
         return nil
     }
     
-    public var doubleValue: Double? {
+    public var y_doubleValue: Double? {
         return Double(self)
     }
     
-    public var urlValue: URL? {
+    public var y_urlValue: URL? {
         return URL(string: self)
     }
     
-    public var boolValue: Bool? {
+    public var y_boolValue: Bool? {
         let resultString   = lowercased()
         let trueTextArray  = ["true", "1", "yes"]
         let falseTextArray = ["false", "no", "0"]
@@ -52,49 +52,49 @@ extension String {
         return nil
     }
     
-    public var dictValue: [String: Any]? {
+    public var y_dictValue: [String: Any]? {
         return self.data(using: .utf8)
-                   .flatMap { try? JSONSerialization.jsonObject(with: $0, options: .mutableContainers) as? [String: Any]}
+            .flatMap { try? JSONSerialization.jsonObject(with: $0, options: .mutableContainers) as? [String: Any]}
     }
 }
 
 // MARK: - manipulate
 extension String {
-    public func filterSpaceAndNewLines() ->String {
-        return components(separatedBy: .whitespacesAndNewlines).joined(separator: .empty)
+    public func y_filterSpaceAndNewLines() ->String {
+        return components(separatedBy: .whitespacesAndNewlines).joined(separator: .y_empty)
     }
     
-    public func isValidAccount() -> Bool {
+    public func y_isValidAccount() -> Bool {
         let regex = "^[a-zA-Z0-9]{6,16}$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
     
-    public func isValidQQ() -> Bool {
+    public func y_isValidQQ() -> Bool {
         let regex = "^[1-9][0-9]{4,12}$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
     
-    public func isValidChinaMobile() -> Bool {
+    public func y_isValidChinaMobile() -> Bool {
         let regex = "^1\\d{10}$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
     
-    public func isValidEmail() -> Bool {
+    public func y_isValidEmail() -> Bool {
         let regex = "^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
     
-    public func isValidRealName() -> Bool {
+    public func y_isValidRealName() -> Bool {
         let regex = "^[\\u4e00-\\u9fa5]{2,5}$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
     
-    public func isPureChinese() -> Bool {
+    public func y_isPureChinese() -> Bool {
         let regex = "^[\\u4e00-\\u9fa5]+$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)

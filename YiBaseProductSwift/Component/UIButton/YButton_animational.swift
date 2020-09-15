@@ -66,9 +66,9 @@ public class YButton_animational: UIView {
     
     public var percent: CGFloat = 0 {
         didSet {
-            _textLayer.foregroundColor = UIColor.colorFrom(beginColor: normalColor,
-                                                           endColor: selectedColor,
-                                                           percent: percent).cgColor
+            _textLayer.foregroundColor = UIColor.y_colorFrom(beginColor: normalColor,
+                                                             endColor: selectedColor,
+                                                             percent: percent).cgColor
             if shouldChangeTextFont {
                 guard let originFont = _originFont else { return }
                 let uesedSize = originFont.pointSize * ((maxScale - 1) * percent + 1)
@@ -83,18 +83,18 @@ public class YButton_animational: UIView {
             let temp = isSelected ? selectedColor : normalColor
             if shouldChangeTextFont, let originFont = _originFont {
                 let fontSize = isSelected ? originFont.pointSize * maxScale : originFont.pointSize
-                UIView.animate(withDuration: .animateTime_show) {
+                UIView.animate(withDuration: .y_animateTime_show) {
                     self._textLayer.foregroundColor = temp.cgColor
                     self._textLayer.fontSize        = fontSize
                 }
             } else {
-                UIView.animate(withDuration: .animateTime_show) {
+                UIView.animate(withDuration: .y_animateTime_show) {
                     self._textLayer.foregroundColor = temp.cgColor
                 }
             }
         }
     }
-
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         _textLayer.frame = self.bounds

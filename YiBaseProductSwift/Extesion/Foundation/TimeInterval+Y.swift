@@ -9,6 +9,6 @@
 import Foundation
 
 extension TimeInterval {
-    public static let animateTime_show: TimeInterval = 0.25
-    public static let animateTime_hide: TimeInterval = 0.2
+    public static let y_animateTime_show: TimeInterval = 0.25
+    public static let y_animateTime_hide: TimeInterval = 0.2
 }

@@ -12,14 +12,14 @@ import CoreGraphics
 extension Float {
     
     //MARK: class method
-    static func valueBetween(min: Float, max: Float, percent: Float) -> Float {
-        let usedPercent = percent.valueBetween0And1
+    static func y_valueBetween(min: Float, max: Float, percent: Float) -> Float {
+        let usedPercent = percent.y_valueBetween0And1
         let diffrence   = max - min
         return min + diffrence * usedPercent
     }
     
     //MARK: instance method
-    public func valueBetween(min: Float, max: Float) -> Float
+    public func y_valueBetween(min: Float, max: Float) -> Float
     {
         switch self {
         case max...:
@@ -31,47 +31,47 @@ extension Float {
         }
     }
     
-    public var valueBetween0And1: Float {
-        return self.valueBetween(min: 0, max: 1)
+    public var y_valueBetween0And1: Float {
+        return self.y_valueBetween(min: 0, max: 1)
     }
     
-    public var stringValue: String {
+    public var y_stringValue: String {
         return "\(self)"
     }
     
-    public var intValue: Int {
+    public var y_intValue: Int {
         return Int(self)
     }
     
-    public var CGFloatValue: CGFloat {
+    public var y_CGFloatValue: CGFloat {
         return CGFloat(self)
     }
     
-    public var doubleValue: Double {
+    public var y_doubleValue: Double {
         return Double(self)
     }
     
-    public var double: Float {
+    public var y_double: Float {
         return self * 2.0
     }
     
-    public var half: Float {
+    public var y_half: Float {
         return self * 0.5
     }
     
-    public var triple: Float {
+    public var y_triple: Float {
         return self * 3.0
     }
     
-    public var one_third: Float {
+    public var y_one_third: Float {
         return self/3.0
     }
     
-    public var quadruple: Float {
+    public var y_quadruple: Float {
         return self * 4.0
     }
     
-    public var quarter: Float {
+    public var y_quarter: Float {
         return self * 0.25
     }
 }

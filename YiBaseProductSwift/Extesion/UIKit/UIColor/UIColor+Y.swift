@@ -9,11 +9,11 @@
 import UIKit
 
 extension UIColor {
-    public static func colorFrom(beginColor: UIColor,
-                                 endColor: UIColor,
-                                 percent: CGFloat) -> UIColor
+    public static func y_colorFrom(beginColor: UIColor,
+                                   endColor: UIColor,
+                                   percent: CGFloat) -> UIColor
     {
-        let usedPercent = percent.valueBetween0And1
+        let usedPercent = percent.y_valueBetween0And1
         var red1: CGFloat = 1
         var red2: CGFloat = 1
         var green1: CGFloat = 1
@@ -38,17 +38,17 @@ extension UIColor {
         return UIColor(red: resultRed, green: resultGreen, blue: resultBlue, alpha: resultAlp)
     }
     
-    public static func color(with red: Int,
-                             green: Int,
-                             blue: Int,
-                             alpha: CGFloat = 1) -> UIColor
+    public static func y_color(with red: Int,
+                               green: Int,
+                               blue: Int,
+                               alpha: CGFloat = 1) -> UIColor
     {
         return UIColor(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: alpha)
     }
     
-    public static func colorWithHexString(_ colorString: String) -> UIColor? {
+    public static func y_colorWithHexString(_ colorString: String) -> UIColor? {
         var usedColor: UIColor?
-
+        
         if colorString.count == 6 {
             var isRight = false
             let temp = colorString.uppercased()
@@ -62,28 +62,28 @@ extension UIColor {
             if isRight {
                 let red1 = temp[temp.startIndex]
                 let red2 = temp[temp.index(after: temp.startIndex)]
-
+                
                 let green1 = temp[temp.index(temp.startIndex, offsetBy: 2)]
                 let green2 = temp[temp.index(temp.startIndex, offsetBy: 3)]
-
+                
                 let blue1  = temp[temp.index(temp.startIndex, offsetBy: 4)]
                 let blue2  = temp[temp.index(temp.startIndex, offsetBy: 5)]
-
+                
                 let r = red1._toInt() * 16 + red2._toInt()
                 let g = green1._toInt() * 16 + green2._toInt()
                 let b = blue1._toInt() * 16 + blue2._toInt()
-
-                usedColor = UIColor.color(with: r, green: g, blue: b)
+                
+                usedColor = UIColor.y_color(with: r, green: g, blue: b)
             }
         }
         return usedColor
     }
     
-    public static var randomColor: UIColor {
+    public static var y_randomColor: UIColor {
         let red   = Int(arc4random() % 256)
         let green = Int(arc4random() % 256)
         let blue  = Int(arc4random() % 256)
-        return UIColor.color(with: red, green: green, blue: blue)
+        return UIColor.y_color(with: red, green: green, blue: blue)
     }
 }
 

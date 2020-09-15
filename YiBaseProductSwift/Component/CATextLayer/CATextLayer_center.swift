@@ -13,7 +13,7 @@ class CATextLayer_center: CATextLayer {
     override func draw(in ctx: CGContext) {
         let height = self.bounds.size.height
         let fontSize = self.fontSize
-        let yDiff    = (height - fontSize).half - fontSize/10
+        let yDiff    = (height - fontSize).y_half - fontSize/10
         ctx.saveGState()
         ctx.translateBy(x: 0.0, y: yDiff)
         super.draw(in: ctx)

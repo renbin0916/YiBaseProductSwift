@@ -195,7 +195,7 @@ extension YSegmentView {
         }
         
         if animate {
-            UIView.animate(withDuration: .animateTime_show)
+            UIView.animate(withDuration: .y_animateTime_show)
             {
                 self._markView.frame = markFrame
             }
