@@ -33,6 +33,8 @@
 		19418007250F677600F6D691 /* UIView+YCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 19418006250F677600F6D691 /* UIView+YCorner.m */; };
 		19B73D322510518500DD3310 /* Array+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73D312510518500DD3310 /* Array+Y.swift */; };
 		19B73D342510553900DD3310 /* Date+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73D332510553900DD3310 /* Date+Y.swift */; };
+		19B73D3725106E5A00DD3310 /* UIImage+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73D3625106E5A00DD3310 /* UIImage+Y.swift */; };
+		19B73D412510993500DD3310 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73D402510993500DD3310 /* UIApplication.swift */; };
 		19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */; };
 		19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */; };
 		19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */; };
@@ -101,6 +103,8 @@
 		19418006250F677600F6D691 /* UIView+YCorner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YCorner.m"; sourceTree = "<group>"; };
 		19B73D312510518500DD3310 /* Array+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Y.swift"; sourceTree = "<group>"; };
 		19B73D332510553900DD3310 /* Date+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Y.swift"; sourceTree = "<group>"; };
+		19B73D3625106E5A00DD3310 /* UIImage+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Y.swift"; sourceTree = "<group>"; };
+		19B73D402510993500DD3310 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		19C36AC124ED1B9E00ED7845 /* UINib+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Y.swift"; sourceTree = "<group>"; };
 		19C36AC524ED1D2600ED7845 /* UIColor+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Y.swift"; sourceTree = "<group>"; };
 		19C36AC724ED1D6300ED7845 /* CGFloat+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Y.swift"; sourceTree = "<group>"; };
@@ -307,6 +311,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		19B73D3525106E4900DD3310 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				19B73D3625106E5A00DD3310 /* UIImage+Y.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		19B73D3F2510991E00DD3310 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				19B73D402510993500DD3310 /* UIApplication.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		19C36AC324ED1BA400ED7845 /* UINib */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +370,8 @@
 		19F2CBDD24ED184800CA2FCD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				19B73D3F2510991E00DD3310 /* UIApplication */,
+				19B73D3525106E4900DD3310 /* UIImage */,
 				19C36AC424ED1D1700ED7845 /* UIColor */,
 				19C36AC324ED1BA400ED7845 /* UINib */,
 				19F2CBE324ED18AB00CA2FCD /* UIView */,
@@ -576,6 +598,7 @@
 				19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */,
 				0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */,
 				1924F007250B6D6B0007D663 /* YButton_animational.swift in Sources */,
+				19B73D412510993500DD3310 /* UIApplication.swift in Sources */,
 				1924F010250B7EB90007D663 /* TimeInterval+Y.swift in Sources */,
 				19F2CBD924ED129500CA2FCD /* YRequestInterceptor.swift in Sources */,
 				19F2CBCF24ECEC6700CA2FCD /* YNetworkError.swift in Sources */,
@@ -587,6 +610,7 @@
 				1924F00C250B7C090007D663 /* Int+Y.swift in Sources */,
 				19B73D342510553900DD3310 /* Date+Y.swift in Sources */,
 				19418007250F677600F6D691 /* UIView+YCorner.m in Sources */,
+				19B73D3725106E5A00DD3310 /* UIImage+Y.swift in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */,
 				19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */,
