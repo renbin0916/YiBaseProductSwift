@@ -29,7 +29,7 @@ static const char *myIsAddCorner = "YCornerValue";
 @implementation UIView (YCorner)
 
 
-- (void)y_remove {
+- (void)y_removeCorner {
     self.y_boardWith   = 0;
     self.y_cornerValue = 0;
     self.isAddCorner   = false;
@@ -41,7 +41,7 @@ static const char *myIsAddCorner = "YCornerValue";
     });
 }
 
-- (void)y_redraw {
+- (void)y_redrawCorner {
     [self y_addYCornerType:self.y_type value:self.y_cornerValue width:self.y_boardWith color:self.y_boardColor];
 }
 
@@ -118,7 +118,7 @@ static const char *myIsAddCorner = "YCornerValue";
 
 - (void)my_layoutSubviews {
     if (self.isAddCorner) {
-        [self y_redraw];
+        [self y_redrawCorner];
     }
     [self my_layoutSubviews];
 }

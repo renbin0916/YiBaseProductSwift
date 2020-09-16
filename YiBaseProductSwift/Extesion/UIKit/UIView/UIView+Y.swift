@@ -197,3 +197,68 @@ extension UIView {
         return nil
     }
 }
+
+//MARK: gradient layer
+extension UIView {
+    private struct AssociateKeys {
+        static var gradientLayerKey = "y_gradientLayerKey"
+    }
+    
+    public var y_grandientLayer: CAGradientLayer? {
+        get {
+            var temp = objc_getAssociatedObject(self, &AssociateKeys.gradientLayerKey) as? CAGradientLayer
+            if temp == nil {
+                temp = CAGradientLayer()
+                self.y_grandientLayer = temp
+            }
+            return temp
+        }
+        set {
+            y_removeGrandientLayer()
+            if let exist = newValue {
+                exist.name = AssociateKeys.gradientLayerKey
+                layer.insertSublayer(exist, at: 0)
+            }
+            objc_setAssociatedObject(self, &AssociateKeys.gradientLayerKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    public func y_updateGradientlayerHorizontal(beginColor: UIColor,
+                                                endColor: UIColor) {
+        y_updateGrandLayer(beginColor: beginColor,
+                           endColor: endColor,
+                           startPoint: .zero,
+                           endPoint: CGPoint(x: 1, y: 0))
+    }
+    
+    public func y_updateGradientLayerVertical(beginColor: UIColor,
+                                              endColor: UIColor) {
+        y_updateGrandLayer(beginColor: beginColor,
+                           endColor: endColor,
+                           startPoint: .zero,
+                           endPoint: CGPoint(x: 0, y: 1))
+    }
+    
+    public func y_updateGrandLayer(beginColor: UIColor,
+                                   endColor: UIColor,
+                                   startPoint: CGPoint,
+                                   endPoint: CGPoint) {
+        let colors = [beginColor.cgColor, endColor.cgColor]
+        y_grandientLayer?.startPoint = startPoint
+        y_grandientLayer?.endPoint   = endPoint
+        y_grandientLayer?.colors     = colors
+        y_grandientLayer?.frame      = bounds
+        setNeedsLayout()
+        layoutIfNeeded()
+    }
+    
+    public func y_removeGrandientLayer() {
+        guard let layers = layer.sublayers else { return }
+        for item in layers {
+            if item.name == AssociateKeys.gradientLayerKey {
+                item.removeFromSuperlayer()
+                return
+            }
+        }
+    }
+}

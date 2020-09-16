@@ -39,9 +39,9 @@ typedef NS_ENUM(NSInteger, YCornerType) {
 /**
  remove corner
  */
-- (void)y_remove;
+- (void)y_removeCorner;
 
-- (void)y_redraw;
+- (void)y_redrawCorner;
 
 - (void)y_addYCornerType:(YCornerType)type value:(CGFloat)value;
 
