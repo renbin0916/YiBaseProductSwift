@@ -115,8 +115,8 @@ public class YButton_animational: UIView {
     }
     
     //MARK: lazy load
-    lazy var _textLayer: CATextLayer_center = {
-        let temp = CATextLayer_center()
+    lazy var _textLayer: YCATextLayer_center = {
+        let temp = YCATextLayer_center()
         temp.alignmentMode = .center
         temp.contentsScale = UIScreen.main.scale
         temp.font          = font

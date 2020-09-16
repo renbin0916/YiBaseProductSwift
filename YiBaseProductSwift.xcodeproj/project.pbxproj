@@ -20,7 +20,9 @@
 		1924F00C250B7C090007D663 /* Int+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00B250B7C090007D663 /* Int+Y.swift */; };
 		1924F00E250B7CC50007D663 /* Double+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00D250B7CC50007D663 /* Double+Y.swift */; };
 		1924F010250B7EB90007D663 /* TimeInterval+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F00F250B7EB90007D663 /* TimeInterval+Y.swift */; };
-		19417FE6250F3EFF00F6D691 /* CATextLayer_center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */; };
+		19353FC2251211DA002FF718 /* YView_placeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19353FC1251211DA002FF718 /* YView_placeHolder.swift */; };
+		19353FC425121275002FF718 /* YView_placeHolder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19353FC325121275002FF718 /* YView_placeHolder.xib */; };
+		19417FE6250F3EFF00F6D691 /* YCATextLayer_center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FE5250F3EFF00F6D691 /* YCATextLayer_center.swift */; };
 		19417FE9250F42B200F6D691 /* YLoadDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FE8250F42B200F6D691 /* YLoadDataProtocol.swift */; };
 		19417FEC250F438600F6D691 /* YSegmentViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FEB250F438600F6D691 /* YSegmentViewFlowLayout.swift */; };
 		19417FEE250F439B00F6D691 /* YSegmentViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19417FED250F439B00F6D691 /* YSegmentViewStyle.swift */; };
@@ -88,7 +90,9 @@
 		1924F00B250B7C090007D663 /* Int+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Y.swift"; sourceTree = "<group>"; };
 		1924F00D250B7CC50007D663 /* Double+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Y.swift"; sourceTree = "<group>"; };
 		1924F00F250B7EB90007D663 /* TimeInterval+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Y.swift"; sourceTree = "<group>"; };
-		19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATextLayer_center.swift; sourceTree = "<group>"; };
+		19353FC1251211DA002FF718 /* YView_placeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YView_placeHolder.swift; sourceTree = "<group>"; };
+		19353FC325121275002FF718 /* YView_placeHolder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YView_placeHolder.xib; sourceTree = "<group>"; };
+		19417FE5250F3EFF00F6D691 /* YCATextLayer_center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YCATextLayer_center.swift; sourceTree = "<group>"; };
 		19417FE8250F42B200F6D691 /* YLoadDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLoadDataProtocol.swift; sourceTree = "<group>"; };
 		19417FEB250F438600F6D691 /* YSegmentViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentViewFlowLayout.swift; sourceTree = "<group>"; };
 		19417FED250F439B00F6D691 /* YSegmentViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSegmentViewStyle.swift; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 		19353FBE2511E406002FF718 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				19353FC1251211DA002FF718 /* YView_placeHolder.swift */,
+				19353FC325121275002FF718 /* YView_placeHolder.xib */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -261,7 +267,7 @@
 		19417FE4250F3EBC00F6D691 /* CATextLayer */ = {
 			isa = PBXGroup;
 			children = (
-				19417FE5250F3EFF00F6D691 /* CATextLayer_center.swift */,
+				19417FE5250F3EFF00F6D691 /* YCATextLayer_center.swift */,
 			);
 			path = CATextLayer;
 			sourceTree = "<group>";
@@ -532,6 +538,7 @@
 			files = (
 				0F5F0D8024E50398002BE690 /* LaunchScreen.storyboard in Resources */,
 				0F5F0D7D24E50398002BE690 /* Assets.xcassets in Resources */,
+				19353FC425121275002FF718 /* YView_placeHolder.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,13 +613,14 @@
 				19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */,
 				0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */,
 				1924F007250B6D6B0007D663 /* YButton_animational.swift in Sources */,
+				19353FC2251211DA002FF718 /* YView_placeHolder.swift in Sources */,
 				19B73D412510993500DD3310 /* UIApplication.swift in Sources */,
 				1924F010250B7EB90007D663 /* TimeInterval+Y.swift in Sources */,
 				19F2CBD924ED129500CA2FCD /* YRequestInterceptor.swift in Sources */,
 				19F2CBCF24ECEC6700CA2FCD /* YNetworkError.swift in Sources */,
 				19F2CBD324ECF98C00CA2FCD /* YAPI.swift in Sources */,
 				19F2CBD124ECEE3000CA2FCD /* String+YNetwork.swift in Sources */,
-				19417FE6250F3EFF00F6D691 /* CATextLayer_center.swift in Sources */,
+				19417FE6250F3EFF00F6D691 /* YCATextLayer_center.swift in Sources */,
 				19417FF0250F43AF00F6D691 /* YSegmentView.swift in Sources */,
 				19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */,
 				1924F00C250B7C090007D663 /* Int+Y.swift in Sources */,

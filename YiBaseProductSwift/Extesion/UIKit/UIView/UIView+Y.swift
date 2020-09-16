@@ -12,6 +12,14 @@ import UIKit
 
 extension UIView: YNamed {}
 
+//MARK: AssociateKeys
+extension UIView {
+    private struct AssociateKeys {
+        static var gradientLayerKey = "y_gradientLayerKey"
+        static var placeHoldKey     = "y_placeHoldKey"
+    }
+}
+
 //MARK: frame
 extension UIView {
     public var y_x: CGFloat {
@@ -83,7 +91,7 @@ extension UIView {
 
 //MARK: XIB
 extension UIView {
-    @IBInspectable var y_cornerRadius: CGFloat {
+    @IBInspectable var x_cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -93,7 +101,7 @@ extension UIView {
         }
     }
         
-    @IBInspectable var y_borderColor: UIColor? {
+    @IBInspectable var x_borderColor: UIColor? {
         get {
             guard let bColor = layer.borderColor else {
                 return nil
@@ -105,7 +113,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var y_borderWidth: CGFloat {
+    @IBInspectable var x_borderWidth: CGFloat {
         get {
             return layer.borderWidth
         }
@@ -114,7 +122,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var y_shadowColor: UIColor? {
+    @IBInspectable var x_shadowColor: UIColor? {
         get {
             guard let color = layer.shadowColor else {
                 return nil
@@ -126,7 +134,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var y_shadowOpacity: Float {
+    @IBInspectable var x_shadowOpacity: Float {
         get {
             return layer.shadowOpacity
         }
@@ -135,7 +143,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var y_shadowOffset: CGSize {
+    @IBInspectable var x_shadowOffset: CGSize {
         get {
             return layer.shadowOffset
         }
@@ -144,7 +152,7 @@ extension UIView {
         }
     }
     
-    @IBInspectable var y_shadowRadius: CGFloat {
+    @IBInspectable var x_shadowRadius: CGFloat {
         get {
             return layer.shadowRadius
         }
@@ -200,9 +208,6 @@ extension UIView {
 
 //MARK: gradient layer
 extension UIView {
-    private struct AssociateKeys {
-        static var gradientLayerKey = "y_gradientLayerKey"
-    }
     
     public var y_grandientLayer: CAGradientLayer? {
         get {
@@ -260,5 +265,39 @@ extension UIView {
                 return
             }
         }
+    }
+}
+
+//MARK: place hold
+extension UIView {
+    public var y_placeHoldView: YView_placeHolder? {
+        get {
+            var temp = objc_getAssociatedObject(self, &AssociateKeys.placeHoldKey) as? YView_placeHolder
+            if temp == nil {
+                temp = YView_placeHolder()
+                self.y_placeHoldView = temp
+            }
+            return temp
+        }
+        set {
+            y_removePlaceHoldView()
+            if let exist = newValue {
+                addSubview(exist)
+            }
+            objc_setAssociatedObject(self, &AssociateKeys.placeHoldKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    public func y_removePlaceHoldView() {
+        for item in subviews {
+            if item.isKind(of: YView_placeHolder.classForCoder()) {
+                item.removeFromSuperview()
+                return
+            }
+        }
+    }
+    
+    public func y_placeHoldViewShow() {
+        
     }
 }
