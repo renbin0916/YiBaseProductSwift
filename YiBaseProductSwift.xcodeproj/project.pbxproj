@@ -14,6 +14,17 @@
 		0F5F0D8B24E50398002BE690 /* YiBaseProductSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D8A24E50398002BE690 /* YiBaseProductSwiftTests.swift */; };
 		0F5F0D9624E50398002BE690 /* YiBaseProductSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */; };
 		0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86C8F324EA62D000685587 /* YAPIProvider.swift */; };
+		191D0E7B2535401200459928 /* YAuthorityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0E7A2535401200459928 /* YAuthorityError.swift */; };
+		191D0E802535402300459928 /* String+YAuthorityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0E7F2535402300459928 /* String+YAuthorityError.swift */; };
+		191D0E862535417A00459928 /* YGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0E852535417A00459928 /* YGCDTimer.swift */; };
+		191D0E8F253541C600459928 /* YAudioTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0E8E253541C600459928 /* YAudioTool.swift */; };
+		191D0E94253541E700459928 /* YAudioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0E93253541E700459928 /* YAudioError.swift */; };
+		191D0E992535420D00459928 /* String+YAudioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0E982535420D00459928 /* String+YAudioError.swift */; };
+		191D0EAC2535430300459928 /* LameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 191D0EAB2535430300459928 /* LameTool.m */; };
+		191D0EB22535455300459928 /* UNUserNotificationCenter+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0EB12535455300459928 /* UNUserNotificationCenter+Y.swift */; };
+		191D0EBB2535458700459928 /* PHPhotoLibrary+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0EBA2535458700459928 /* PHPhotoLibrary+Y.swift */; };
+		191D0EC4253545B000459928 /* AVCaptureDevice+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0EC3253545B000459928 /* AVCaptureDevice+Y.swift */; };
+		191D0ECD2535461E00459928 /* RxSwift+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191D0ECC2535461E00459928 /* RxSwift+Y.swift */; };
 		1924F004250B69240007D663 /* YQuantumValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F003250B69240007D663 /* YQuantumValue.swift */; };
 		1924F007250B6D6B0007D663 /* YButton_animational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F006250B6D6B0007D663 /* YButton_animational.swift */; };
 		1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1924F009250B7AF70007D663 /* Float+Y.swift */; };
@@ -84,6 +95,18 @@
 		0F5F0D9524E50398002BE690 /* YiBaseProductSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiBaseProductSwiftUITests.swift; sourceTree = "<group>"; };
 		0F5F0D9724E50398002BE690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F86C8F324EA62D000685587 /* YAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAPIProvider.swift; sourceTree = "<group>"; };
+		191D0E7A2535401200459928 /* YAuthorityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAuthorityError.swift; sourceTree = "<group>"; };
+		191D0E7F2535402300459928 /* String+YAuthorityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YAuthorityError.swift"; sourceTree = "<group>"; };
+		191D0E852535417A00459928 /* YGCDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YGCDTimer.swift; sourceTree = "<group>"; };
+		191D0E8E253541C600459928 /* YAudioTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAudioTool.swift; sourceTree = "<group>"; };
+		191D0E93253541E700459928 /* YAudioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAudioError.swift; sourceTree = "<group>"; };
+		191D0E982535420D00459928 /* String+YAudioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YAudioError.swift"; sourceTree = "<group>"; };
+		191D0EAA2535430300459928 /* LameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LameTool.h; sourceTree = "<group>"; };
+		191D0EAB2535430300459928 /* LameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LameTool.m; sourceTree = "<group>"; };
+		191D0EB12535455300459928 /* UNUserNotificationCenter+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNUserNotificationCenter+Y.swift"; sourceTree = "<group>"; };
+		191D0EBA2535458700459928 /* PHPhotoLibrary+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibrary+Y.swift"; sourceTree = "<group>"; };
+		191D0EC3253545B000459928 /* AVCaptureDevice+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Y.swift"; sourceTree = "<group>"; };
+		191D0ECC2535461E00459928 /* RxSwift+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Y.swift"; sourceTree = "<group>"; };
 		1924F003250B69240007D663 /* YQuantumValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQuantumValue.swift; sourceTree = "<group>"; };
 		1924F006250B6D6B0007D663 /* YButton_animational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YButton_animational.swift; sourceTree = "<group>"; };
 		1924F009250B7AF70007D663 /* Float+Y.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Y.swift"; sourceTree = "<group>"; };
@@ -223,9 +246,88 @@
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
+		191D0E7925353FE900459928 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				191D0E7A2535401200459928 /* YAuthorityError.swift */,
+				191D0E7F2535402300459928 /* String+YAuthorityError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		191D0E842535416600459928 /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				191D0E852535417A00459928 /* YGCDTimer.swift */,
+			);
+			path = GCDTimer;
+			sourceTree = "<group>";
+		};
+		191D0E8D253541B500459928 /* AudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				191D0E8E253541C600459928 /* YAudioTool.swift */,
+				191D0E93253541E700459928 /* YAudioError.swift */,
+				191D0E982535420D00459928 /* String+YAudioError.swift */,
+			);
+			path = AudioTool;
+			sourceTree = "<group>";
+		};
+		191D0E9D2535428500459928 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				191D0E9E253542AD00459928 /* Lame */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		191D0E9E253542AD00459928 /* Lame */ = {
+			isa = PBXGroup;
+			children = (
+				191D0EAA2535430300459928 /* LameTool.h */,
+				191D0EAB2535430300459928 /* LameTool.m */,
+			);
+			path = Lame;
+			sourceTree = "<group>";
+		};
+		191D0EB02535453800459928 /* UNUserNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				191D0EB12535455300459928 /* UNUserNotificationCenter+Y.swift */,
+			);
+			path = UNUserNotificationCenter;
+			sourceTree = "<group>";
+		};
+		191D0EB92535457200459928 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				191D0EBA2535458700459928 /* PHPhotoLibrary+Y.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		191D0EC22535459F00459928 /* AVFundation */ = {
+			isa = PBXGroup;
+			children = (
+				191D0EC3253545B000459928 /* AVCaptureDevice+Y.swift */,
+			);
+			path = AVFundation;
+			sourceTree = "<group>";
+		};
+		191D0ECB253545FF00459928 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				191D0ECC2535461E00459928 /* RxSwift+Y.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
 		1924F001250B68ED0007D663 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				191D0E8D253541B500459928 /* AudioTool */,
+				191D0E842535416600459928 /* GCDTimer */,
+				191D0E7925353FE900459928 /* Error */,
 				19353FBE2511E406002FF718 /* UIView */,
 				19417FFA250F4FC700F6D691 /* UIViewController */,
 				19417FF9250F49E700F6D691 /* Protocol */,
@@ -320,6 +422,7 @@
 		19418004250F66F000F6D691 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				191D0E9D2535428500459928 /* ThirdParty */,
 				19418000250F652200F6D691 /* YiBaseProductSwift-Bridging-Header.h */,
 			);
 			path = Resources;
@@ -360,6 +463,10 @@
 		19F2CBD424ECFB9500CA2FCD /* Extesion */ = {
 			isa = PBXGroup;
 			children = (
+				191D0ECB253545FF00459928 /* RxSwift */,
+				191D0EC22535459F00459928 /* AVFundation */,
+				191D0EB92535457200459928 /* Photos */,
+				191D0EB02535453800459928 /* UNUserNotificationCenter */,
 				19F2CBDD24ED184800CA2FCD /* UIKit */,
 				19F2CBDC24ED183B00CA2FCD /* Foundation */,
 			);
@@ -610,8 +717,10 @@
 				19417FFC250F500500F6D691 /* YBaseNavigationController.swift in Sources */,
 				19B73D322510518500DD3310 /* Array+Y.swift in Sources */,
 				19F2CBDF24ED186100CA2FCD /* UIViewController+Y.swift in Sources */,
+				191D0EAC2535430300459928 /* LameTool.m in Sources */,
 				19417FF5250F46F900F6D691 /* YCollectionViewLaoutAttributes_backgroundColor.swift in Sources */,
 				0F86C8F424EA62D000685587 /* YAPIProvider.swift in Sources */,
+				191D0E7B2535401200459928 /* YAuthorityError.swift in Sources */,
 				1924F007250B6D6B0007D663 /* YButton_animational.swift in Sources */,
 				19353FC2251211DA002FF718 /* YView_placeHolder.swift in Sources */,
 				19B73D412510993500DD3310 /* UIApplication.swift in Sources */,
@@ -624,23 +733,32 @@
 				19417FF0250F43AF00F6D691 /* YSegmentView.swift in Sources */,
 				19C36AC224ED1B9E00ED7845 /* UINib+Y.swift in Sources */,
 				1924F00C250B7C090007D663 /* Int+Y.swift in Sources */,
+				191D0E8F253541C600459928 /* YAudioTool.swift in Sources */,
+				191D0EB22535455300459928 /* UNUserNotificationCenter+Y.swift in Sources */,
 				19B73D342510553900DD3310 /* Date+Y.swift in Sources */,
 				19418007250F677600F6D691 /* UIView+YCorner.m in Sources */,
 				19B73D3725106E5A00DD3310 /* UIImage+Y.swift in Sources */,
 				0F5F0D7424E50394002BE690 /* AppDelegate.swift in Sources */,
 				1924F00A250B7AF70007D663 /* Float+Y.swift in Sources */,
 				19F2CBE124ED189500CA2FCD /* UIView+Y.swift in Sources */,
+				191D0E862535417A00459928 /* YGCDTimer.swift in Sources */,
 				19417FF2250F43BA00F6D691 /* YSegmentViewDelegate.swift in Sources */,
 				19417FF8250F47A600F6D691 /* YCollectionDecorationView_backgroudColor.swift in Sources */,
 				19417FE9250F42B200F6D691 /* YLoadDataProtocol.swift in Sources */,
+				191D0EC4253545B000459928 /* AVCaptureDevice+Y.swift in Sources */,
 				1924F00E250B7CC50007D663 /* Double+Y.swift in Sources */,
 				1924F004250B69240007D663 /* YQuantumValue.swift in Sources */,
 				19C36AC624ED1D2600ED7845 /* UIColor+Y.swift in Sources */,
 				19417FEE250F439B00F6D691 /* YSegmentViewStyle.swift in Sources */,
+				191D0ECD2535461E00459928 /* RxSwift+Y.swift in Sources */,
 				19F2CBCB24ECCF2700CA2FCD /* YNetWorkActivityStatusPlugin.swift in Sources */,
+				191D0E94253541E700459928 /* YAudioError.swift in Sources */,
 				19417FFE250F513800F6D691 /* YBaseViewController.swift in Sources */,
+				191D0E992535420D00459928 /* String+YAudioError.swift in Sources */,
+				191D0EBB2535458700459928 /* PHPhotoLibrary+Y.swift in Sources */,
 				19F2CBDB24ED17FE00CA2FCD /* YNamed.swift in Sources */,
 				19C36AC824ED1D6300ED7845 /* CGFloat+Y.swift in Sources */,
+				191D0E802535402300459928 /* String+YAuthorityError.swift in Sources */,
 				19F2CBD624ECFBA300CA2FCD /* String+Y.swift in Sources */,
 				19F2CBCD24ECCFFF00CA2FCD /* YNetworkActivityScheduler.swift in Sources */,
 			);
@@ -739,7 +857,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -793,7 +911,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

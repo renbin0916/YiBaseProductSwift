@@ -46,6 +46,41 @@ extension UIApplication {
         }
     }
     
+    public class func canOpenSettingPage() -> Bool {
+        guard let url = URL(string: UIApplication.openSettingsURLString) else {
+            return false
+        }
+        return self.shared.canOpenURL(url)
+    }
+    
+    public class func openSettingPage() {
+        guard let url = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        self.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
+    #warning(" 文字内容根据项目要求完善")
+    public class func showSettingPathAlert() {
+        let alertController =  UIAlertController(title: "你已关闭权限", message: "你可以到 设置-隐私-照片 中设置权限，启用功能", preferredStyle: .alert)
+        let a1 = UIAlertAction(title: "知道了", style: .cancel, handler: nil)
+        alertController.addAction(a1)
+        
+        self.shared.rootVC?.present(alertController, animated: true, completion: nil)
+    }
+    
+    #warning(" 文字内容根据项目要求完善")
+    public class func showSettingPageAlert() {
+        let alertController =  UIAlertController(title: "你已关闭权限", message: "你需要设置权限，打开功能吗？", preferredStyle: .alert)
+        let a1 = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let a2 = UIAlertAction(title: "好的", style: .default) { _ in
+            UIApplication.openSettingPage()
+        }
+        alertController.addAction(a1)
+        alertController.addAction(a2)
+        self.shared.rootVC?.present(alertController, animated: true, completion: nil)
+    }
+    
     
     private func _changeRootViewContrller(_ vc: UIViewController,
                                           from: UIView,

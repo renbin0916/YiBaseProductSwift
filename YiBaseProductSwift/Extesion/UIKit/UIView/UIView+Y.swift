@@ -283,6 +283,7 @@ extension UIView {
             y_removePlaceHoldView()
             if let exist = newValue {
                 addSubview(exist)
+                exist.isHidden = true
             }
             objc_setAssociatedObject(self, &AssociateKeys.placeHoldKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
@@ -298,6 +299,11 @@ extension UIView {
     }
     
     public func y_placeHoldViewShow() {
-        
+        y_placeHoldView?.isHidden = false
+    }
+    
+    public func y_placeHoldViewDismiss() {
+        y_placeHoldView?.removeFromSuperview()
+        y_placeHoldView?.isHidden = true
     }
 }

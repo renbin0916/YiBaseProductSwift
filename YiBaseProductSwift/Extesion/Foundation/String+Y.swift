@@ -12,6 +12,9 @@ import CoreGraphics
 // MARK: - const
 extension String {
     public static let y_empty = ""
+    public static let y_cachePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory,
+                                                                        .userDomainMask,
+                                                                        true).first!
 }
 
 // MARK: - conversion
@@ -98,5 +101,17 @@ extension String {
         let regex = "^[\\u4e00-\\u9fa5]+$"
         let predicate: NSPredicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
+    }
+    
+    public func y_timestampToTimeString(isMillisecond: Bool = true,
+                                        formatter: String) -> String? {
+        let timeInterval: TimeInterval
+        if isMillisecond {
+            timeInterval = (self.y_doubleValue ?? 0)/1000.0
+        } else {
+            timeInterval = (self.y_doubleValue ?? 0)
+        }
+        let date = Date.init(timeIntervalSince1970: timeInterval)
+        return Date.y_timeToChinaTimeString(time: date, formatter: formatter)
     }
 }

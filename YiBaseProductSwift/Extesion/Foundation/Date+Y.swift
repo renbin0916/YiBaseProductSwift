@@ -52,6 +52,12 @@ extension Date {
         return _formatter1.date(from: timeString)
     }
     
+    public static func y_timestampToString() -> String {
+        let date = Date()
+        let timeIntervar = date.timeIntervalSince1970
+        return timeIntervar.y_stringValue
+    }
+    
     public func y_days() -> [Int] {
         let calendar = Calendar.current
         var result   = [Int]()
